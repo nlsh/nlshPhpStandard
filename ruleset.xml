@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="nlshPhpStandard">
+    <description>The coding standard for Nils Heinold. Have a look at http://forge.typo3.org/projects/team-php_codesniffer/wiki</description>
+
+    <!-- Arrays -->
+    <rule ref="Squiz.Arrays.ArrayBracketSpacing" />
+
+    <!-- Classes -->
+    <rule ref="../TYPO3/Sniffs/Classes/LowercaseClassKeywordsSniff.php" />
+    <rule ref="Squiz.Classes.SelfMemberReference" />
+    <rule ref="Generic.Classes.DuplicateClassName" />
+
+    <!-- CodeAnalysis -->
+    <rule ref="Generic.CodeAnalysis.ForLoopWithTestFunctionCall" />
+    <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter" />
+    <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement" />
+    <rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier" />
+    <rule ref="Generic.CodeAnalysis.EmptyStatement" />
+
+    <!-- Commenting -->
+    <rule ref="PEAR.Commenting.InlineComment" />
+    <rule ref="../TYPO3/Sniffs/Commenting/DoubleSlashCommentsInNewLineSniff.php" />
+    <rule ref="../TYPO3/Sniffs/Commenting/ValidCommentLineLengthSniff.php" />
+    <rule ref="../TYPO3/Sniffs/Commenting/ClassDocCommentSniff.php" />
+    <rule ref="../TYPO3/Sniffs/Commenting/NoAuthorAnnotationInFunctionDocCommentSniff.php" />
+    <rule ref="../TYPO3/Sniffs/Commenting/FunctionDocCommentSniff.php" />
+    <rule ref="../TYPO3/Sniffs/Commenting/SpaceAfterDoubleSlashSniff.php" />
+    <rule ref="../TYPO3/Sniffs/Commenting/ValidCommentIndentSniff.php" />
+
+    <!-- Control structures -->
+    <rule ref="Generic.ControlStructures.InlineControlStructure" />
+    <rule ref="Squiz.ControlStructures.ControlSignature" />
+    <rule ref="../TYPO3/Sniffs/ControlStructures/DisallowElseIfConstructSniff.php" />
+    <rule ref="../TYPO3/Sniffs/ControlStructures/ValidBreakStatementsInSwitchesSniff.php" />
+    <rule ref="../TYPO3/Sniffs/ControlStructures/AlignedBreakStatementSniff.php" />
+    <rule ref="../TYPO3/Sniffs/ControlStructures/ValidDefaultStatementsInSwitchesSniff.php" />
+    <rule ref="../TYPO3/Sniffs/ControlStructures/DisallowEachInLoopConditionSniff.php" />
+
+    <!-- Debug -->
+    <rule ref="../TYPO3/Sniffs/Debug/DebugCodeSniff.php">
+    <exclude-pattern>*typo3/sysext/core/Classes/Utility/DebugUtility.php</exclude-pattern>
+    </rule>
+
+    <!-- Files -->
+    <rule ref="Generic.Files.OneClassPerFile">
+    <exclude-pattern>*typo3/sysext/core/Migrations/Code/LegacyClassesForIde.php</exclude-pattern>
+    </rule>
+    <rule ref="Squiz.Classes.ClassFileName" />
+    <rule ref="../TYPO3/Sniffs/Files/OneInterfacePerFileSniff.php" />
+    <rule ref="Generic.Files.ByteOrderMark" />
+    <rule ref="Generic.Files.LineEndings">
+        <properties>
+            <property name="eolChar" value="\r\n"/>
+        </properties>
+    </rule>
+    <rule ref="Generic.Files.LineLength">
+    <properties>
+    <property name="lineLimit" value="100"/>
+    <property name="absoluteLineLimit" value="120"/>
+    </properties>
+    </rule>
+    <rule ref="../TYPO3/Sniffs/Files/IncludingFileSniff.php" />
+
+    <!-- Formatting -->
+    <rule ref="Generic.Formatting.DisallowMultipleStatements" />
+
+    <!-- Functions -->
+    <rule ref="Generic.Functions.FunctionCallArgumentSpacing" />
+    <rule ref="Generic.Functions.OpeningFunctionBraceKernighanRitchie" />
+    <rule ref="Squiz.Scope.MethodScope" />
+    <!-- valid function name -->
+    <rule ref="../TYPO3/Sniffs/Scope/AlwaysReturnSniff.php" />
+
+    <!-- Loops -->
+
+    <!-- NamingConventions -->
+    <rule ref="../TYPO3/Sniffs/NamingConventions/ValidVariableNameSniff.php" />
+    <rule ref="Generic.NamingConventions.ConstructorName" />
+    <rule ref="../TYPO3/Sniffs/NamingConventions/ValidFunctionNameSniff.php" />
+
+    <!-- Objects -->
+
+    <!-- Operators -->
+
+    <!-- PHP -->
+    <rule ref="Generic.PHP.CharacterBeforePHPOpeningTag" />
+    <rule ref="../TYPO3/Sniffs/PHP/CharacterAfterPHPClosingTagSniff.php" />
+    <rule ref="Generic.PHP.DisallowShortOpenTag" />
+    <rule ref="Squiz.PHP.NonExecutableCode" />
+    <rule ref="../TYPO3/Sniffs/PHP/DisallowMultiplePHPTagsSniff.php" />
+    <rule ref="Zend.Files.ClosingTag" />
+    <rule ref="Generic.PHP.UpperCaseConstant" />
+    <rule ref="Generic.PHP.DeprecatedFunctions" />
+    <rule ref="Squiz.PHP.Eval">
+    <exclude-pattern>*/tests/*</exclude-pattern>
+    <exclude-pattern>*typo3/sysext/install/Classes/CoreUpdates/LocalConfigurationUpdate.php</exclude-pattern>
+    </rule>
+    <rule ref="Squiz.PHP.GlobalKeyword" />
+
+    <!-- Scope -->
+    <rule ref="Squiz.Scope.MemberVarScope" />
+
+
+    <!-- Strings -->
+    <rule ref="../TYPO3/Sniffs/Strings/UnnecessaryStringConcatSniff.php" />
+    <rule ref="../nlshPhpStandard/Sniffs/Strings/NlshDoubleQuoteUsageSniff.php" />
+    <rule ref="../TYPO3/Sniffs/Strings/ConcatenationSpacingSniff.php" />
+
+    <!-- Whitespace -->
+    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace" />
+    <rule ref="../TYPO3/Sniffs/WhiteSpace/AssignmentArithmeticAndComparisonSpaceSniff.php" />
+    <rule ref="Squiz.WhiteSpace.SemicolonSpacing" />
+    <rule ref="../TYPO3/Sniffs/WhiteSpace/AsteriksWhitespacesSniff.php" />
+    <rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing" />
+    <rule ref="Squiz.WhiteSpace.CastSpacing" />
+    <rule ref="Squiz.WhiteSpace.ControlStructureSpacing" />
+    <rule ref="Squiz.WhiteSpace.FunctionOpeningBraceSpace" />
+</ruleset>
