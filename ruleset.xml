@@ -38,11 +38,6 @@
 	<rule ref="../TYPO3SniffPool/Sniffs/Commenting/DoubleSlashCommentsInNewLineSniff.php" />
 	<rule ref="../TYPO3SniffPool/Sniffs/Commenting/ValidCommentLineLengthSniff.php" />
 	<rule ref="../TYPO3SniffPool/Sniffs/Commenting/DocCommentSniff.php" />
-	<rule ref="../TYPO3SniffPool/Sniffs/Commenting/FileCommentSniff.php" />
-	<rule ref="TYPO3SniffPool.Commenting.FileComment">
-		<exclude-pattern>ext_emconf.php</exclude-pattern>
-		<exclude-pattern>ext_tables.php</exclude-pattern>
-	</rule>
 	<rule ref="../TYPO3SniffPool/Sniffs/Commenting/ClassCommentSniff.php" />
 	<rule ref="../TYPO3SniffPool/Sniffs/Commenting/FunctionCommentSniff.php" />
 	<rule ref="../TYPO3SniffPool/Sniffs/Commenting/NoAuthorAnnotationInFunctionDocCommentSniff.php" />
