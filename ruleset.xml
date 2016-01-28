@@ -29,6 +29,7 @@
 
 	<!-- CodeAnalysis -->
 	<rule ref="Generic.CodeAnalysis.ForLoopWithTestFunctionCall" />
+    <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter" />
 	<rule ref="Generic.CodeAnalysis.UnconditionalIfStatement" />
 	<rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier" />
 	<rule ref="Generic.CodeAnalysis.EmptyStatement" />
@@ -41,6 +42,7 @@
 	<rule ref="../TYPO3SniffPool/Sniffs/Commenting/ClassCommentSniff.php" />
 	<rule ref="../TYPO3SniffPool/Sniffs/Commenting/FunctionCommentSniff.php" />
 	<rule ref="../TYPO3SniffPool/Sniffs/Commenting/NoAuthorAnnotationInFunctionDocCommentSniff.php" />
+    <rule ref="../TYPO3SniffPool/Sniffs/Commenting/SpaceAfterDoubleSlashSniff.php" />
 	<rule ref="Squiz.Commenting.DocCommentAlignment" />
 
 	<!-- Control structures -->
@@ -115,7 +117,7 @@
 
 	<!-- Strings -->
 	<rule ref="../TYPO3SniffPool/Sniffs/Strings/UnnecessaryStringConcatSniff.php" />
-	<rule ref="Squiz.Strings.DoubleQuoteUsage" />
+	<rule ref="../nlshPhpStandard/Sniffs/Strings/NlshDoubleQuoteUsageSniff.php" />
 	<rule ref="../TYPO3SniffPool/Sniffs/Strings/ConcatenationSpacingSniff.php" />
 
 	<!-- Whitespace -->
@@ -132,4 +134,7 @@
 	<rule ref="TYPO3SniffPool.Commenting.SpaceAfterDoubleSlash" />
 	-->
 	<rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing" />
+    <rule ref="Squiz.WhiteSpace.CastSpacing" />
+    <rule ref="Squiz.WhiteSpace.ControlStructureSpacing" />
+    <rule ref="Squiz.WhiteSpace.FunctionOpeningBraceSpace" />
 </ruleset>
