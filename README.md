@@ -26,10 +26,10 @@ Um Euren eigenen definierten Standard nutzen zu können legt im o.g. Verzeichnis
 
 Ich persönlich nutze die Standards von [TYPO3](https://typo3.org/ "TYPO3")
 
-Holt euch dafür unter [https://github.com/typo3-ci/TYPO3SniffPool/releases/](https://github.com/typo3-ci/TYPO3SniffPool/releases/ "https://github.com/typo3-ci/TYPO3SniffPool/releases/") das Release 1.0.1 als .zip- Datei und kopiert daraus den Ordner **TYPO3SniffPool-x.x.x** in das o.g. Verzeichnis.
+Holt euch dafür unter [https://github.com/typo3-ci/TYPO3SniffPool/releases/](https://github.com/typo3-ci/TYPO3SniffPool/releases/ "https://github.com/typo3-ci/TYPO3SniffPool/releases/") das neueste Release als .zip- Datei und kopiert daraus den Ordner **TYPO3SniffPool-x.x.x** in das o.g. Verzeichnis.
 **Kürzt den Ordner- Namen um die Angabe der Versions- Nummer!**
 
-Holt euch dann unter [https://github.com/typo3-ci/TYPO3CMS/releases](https://github.com/typo3-ci/TYPO3CMS/releases "https://github.com/typo3-ci/TYPO3CMS/releases") aus dem Release 6.2.1 die `ruleset.xml` und kopiert diese in Euer Wurzelverzeichnis Eures Standards. Dieses könnt Ihr jetzt nach Belieben anpassen und eigene Standards hinzufügen, bzw. angepasste Sniffs aufrufen.
+Holt euch dann unter [https://github.com/typo3-ci/TYPO3CMS/releases](https://github.com/typo3-ci/TYPO3CMS/releases "https://github.com/typo3-ci/TYPO3CMS/releases") das neueste Release der `ruleset.xml` und kopiert diese in Euer Wurzelverzeichnis Eures Standards. Dieses könnt Ihr jetzt nach Belieben anpassen und eigene Standards hinzufügen, bzw. angepasste Sniffs aufrufen.
 
 Mit `phpcs --config-show` könnt Ihr Euch die Konfiguration ansehen.
 
