@@ -31,11 +31,9 @@ Holt euch dafür unter [https://github.com/typo3-ci/TYPO3SniffPool/releases/](ht
 
 Holt euch dann unter [https://github.com/typo3-ci/TYPO3CMS/releases](https://github.com/typo3-ci/TYPO3CMS/releases "https://github.com/typo3-ci/TYPO3CMS/releases") das neueste Release der `ruleset.xml` und kopiert diese in Euer Wurzelverzeichnis Eures Standards. Dieses könnt Ihr jetzt nach Belieben anpassen und eigene Standards hinzufügen, bzw. angepasste Sniffs aufrufen.
 
-Mit `phpcs --config-show` könnt Ihr Euch die Konfiguration ansehen.
+Mit `phpcs -i` könnt Ihr Euch die installierten Konfiguration ansehen.
 
-Mit `phpcs --confic-set standard NameEuresStandards` könnt Ihr Euren Standard als vordefiniert bestimmen.
-
-Habt Ihr Euren Standard vorkonfiguriert könnt Ihr mit `phpcs (eventuellPfadvomCmsFensterZurDatei/)zuTestendePhpDatei` loslegen.
+Mit `phpcs --standard=NameEuresStandards (eventuellPfadvomCmsFensterZurDatei/)zuTestendePhpDatei` könnt Ihr loslegen.
 
 Viel Spaß
 

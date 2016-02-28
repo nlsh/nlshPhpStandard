@@ -27,7 +27,7 @@
  * @version   Release: 1.4.5
  * @link      http://pear.php.net/package/PHP_CodeSniffer
  */
-class nlshPhpStandard_Sniffs_Strings_NlshDoubleQuoteUsageSniff implements PHP_CodeSniffer_Sniff
+class nlsh_Sniffs_Strings_NlshDoubleQuoteUsageSniff implements PHP_CodeSniffer_Sniff
 {
 
 

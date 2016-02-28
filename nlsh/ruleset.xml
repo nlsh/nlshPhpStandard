@@ -67,7 +67,7 @@
 	</rule>
 	<rule ref="Generic.Files.OneInterfacePerFile" />
 	<rule ref="Generic.Files.ByteOrderMark" />
-	<rule ref="nlshphpStandard.Files.nlshLineEndings" />
+	<rule ref="nlsh.Files.nlshLineEndings" />
 	<rule ref="Generic.Files.LineLength">
 		<properties>
 			<property name="lineLimit" value="130"/>
@@ -117,7 +117,7 @@
 
 	<!-- Strings -->
 	<rule ref="../TYPO3SniffPool/Sniffs/Strings/UnnecessaryStringConcatSniff.php" />
-	<rule ref="../nlshPhpStandard/Sniffs/Strings/NlshDoubleQuoteUsageSniff.php" />
+	<rule ref="nlsh.Strings.NlshDoubleQuoteUsage" />
 	<rule ref="../TYPO3SniffPool/Sniffs/Strings/ConcatenationSpacingSniff.php" />
 
 	<!-- Whitespace -->

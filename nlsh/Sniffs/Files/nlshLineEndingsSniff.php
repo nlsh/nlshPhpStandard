@@ -27,7 +27,7 @@
  * @version   Release: 2.3.0
  * @link      http://pear.php.net/package/PHP_CodeSniffer
  */
-class nlshphpStandard_Sniffs_Files_nlshLineEndingsSniff implements PHP_CodeSniffer_Sniff
+class nlsh_Sniffs_Files_nlshLineEndingsSniff implements PHP_CodeSniffer_Sniff
 {
 
     /**
