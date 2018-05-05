@@ -20,16 +20,9 @@ Diesen bitte in der aktuell angebotenen Version mit der unter **Easy Install** a
 
 **Bitte die angezeigten PEARL- Warnungen oder Hinweise nicht ignorieren, sondern Folge leisten!**
 
-Danach befinden sich im Verzeichnis  `C:\xampp\php\pear\PHP\CodeSniffer\Standards` die einzelnen Definitionen für Standards, vorgelistet nach bestehenden Standards.
+Danach befinden sich im Verzeichnis  `C:\xampp\php\pear\PHP\CodeSniffer\src\Standards` ( in der Version 2.x im Verzeichnis `C:\xampp\php\pear\PHP\CodeSniffer\Standards`) die einzelnen Definitionen für Standards, vorgelistet nach bestehenden Standards.
 
 Um Euren eigenen definierten Standard nutzen zu können legt im o.g. Verzeichnis einen Ordner mit dem Namen Eures Standards an und erstellt dort einen Ordner Namens **Sniffs**. In diesem Ordner kommen dann Eure selbstgebastelten oder angepassten Sniffs. Außerdem müsst Ihr im Wurzelverzeichnis Eures Standards- Verzeichnisses eine Datei Namens `ruleset.xml` anlegen.
-
-Ich persönlich nutze die Standards von [TYPO3](https://typo3.org/ "TYPO3")
-
-Holt euch dafür unter [https://github.com/typo3-ci/TYPO3SniffPool/releases/](https://github.com/typo3-ci/TYPO3SniffPool/releases/ "https://github.com/typo3-ci/TYPO3SniffPool/releases/") das neueste Release als .zip- Datei und kopiert daraus den Ordner **TYPO3SniffPool-x.x.x** in das o.g. Verzeichnis.
-**Kürzt den Ordner- Namen um die Angabe der Versions- Nummer!**
-
-Holt euch dann unter [https://github.com/typo3-ci/TYPO3CMS/releases](https://github.com/typo3-ci/TYPO3CMS/releases "https://github.com/typo3-ci/TYPO3CMS/releases") das neueste Release der `ruleset.xml` und kopiert diese in Euer Wurzelverzeichnis Eures Standards. Dieses könnt Ihr jetzt nach Belieben anpassen und eigene Standards hinzufügen, bzw. angepasste Sniffs aufrufen.
 
 Mit `phpcs -i` könnt Ihr Euch die installierten Konfiguration ansehen.
 
